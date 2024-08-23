@@ -29,10 +29,10 @@ s_order
 # Splitting the Data into Training and Testing sets
 from statsmodels.tsa.arima_model import ARIMA
 
-train=df.iloc[:-20]  # training the model on the entire data set except the last 30 rows
+train=df.iloc[:-20]  # training the model on the entire data set except the last 20 rows
 train
 
-test=df.iloc[-20:]  # taking last 30 rows for the testing purpose
+test=df.iloc[-20:]  # taking last 20 rows for the testing purpose
 test
 #%%
 # Creating ACF and PACF plots for training data
